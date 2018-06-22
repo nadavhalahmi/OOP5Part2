@@ -56,38 +56,38 @@ include CMakeFiles/Part2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Part2.dir/flags.make
 
-CMakeFiles/Part2.dir/main.cpp.obj: CMakeFiles/Part2.dir/flags.make
-CMakeFiles/Part2.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Part2.dir/main.cpp.obj"
-	C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Part2.dir\main.cpp.obj -c "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\main.cpp"
+CMakeFiles/Part2.dir/Part2Examples.cpp.obj: CMakeFiles/Part2.dir/flags.make
+CMakeFiles/Part2.dir/Part2Examples.cpp.obj: ../Part2Examples.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Part2.dir/Part2Examples.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Part2.dir\Part2Examples.cpp.obj -c "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\Part2Examples.cpp"
 
-CMakeFiles/Part2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Part2.dir/main.cpp.i"
-	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\main.cpp" > CMakeFiles\Part2.dir\main.cpp.i
+CMakeFiles/Part2.dir/Part2Examples.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Part2.dir/Part2Examples.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\Part2Examples.cpp" > CMakeFiles\Part2.dir\Part2Examples.cpp.i
 
-CMakeFiles/Part2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Part2.dir/main.cpp.s"
-	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\main.cpp" -o CMakeFiles\Part2.dir\main.cpp.s
+CMakeFiles/Part2.dir/Part2Examples.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Part2.dir/Part2Examples.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\nadav\OneDrive - Technion\Simester D\OOP\HW5\Part2\Part2Examples.cpp" -o CMakeFiles\Part2.dir\Part2Examples.cpp.s
 
-CMakeFiles/Part2.dir/main.cpp.obj.requires:
+CMakeFiles/Part2.dir/Part2Examples.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Part2.dir/main.cpp.obj.requires
+.PHONY : CMakeFiles/Part2.dir/Part2Examples.cpp.obj.requires
 
-CMakeFiles/Part2.dir/main.cpp.obj.provides: CMakeFiles/Part2.dir/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/Part2.dir/main.cpp.obj.provides
+CMakeFiles/Part2.dir/Part2Examples.cpp.obj.provides: CMakeFiles/Part2.dir/Part2Examples.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Part2Examples.cpp.obj.provides.build
+.PHONY : CMakeFiles/Part2.dir/Part2Examples.cpp.obj.provides
 
-CMakeFiles/Part2.dir/main.cpp.obj.provides.build: CMakeFiles/Part2.dir/main.cpp.obj
+CMakeFiles/Part2.dir/Part2Examples.cpp.obj.provides.build: CMakeFiles/Part2.dir/Part2Examples.cpp.obj
 
 
 # Object files for target Part2
 Part2_OBJECTS = \
-"CMakeFiles/Part2.dir/main.cpp.obj"
+"CMakeFiles/Part2.dir/Part2Examples.cpp.obj"
 
 # External object files for target Part2
 Part2_EXTERNAL_OBJECTS =
 
-Part2.exe: CMakeFiles/Part2.dir/main.cpp.obj
+Part2.exe: CMakeFiles/Part2.dir/Part2Examples.cpp.obj
 Part2.exe: CMakeFiles/Part2.dir/build.make
 Part2.exe: CMakeFiles/Part2.dir/linklibs.rsp
 Part2.exe: CMakeFiles/Part2.dir/objects1.rsp
@@ -100,7 +100,7 @@ CMakeFiles/Part2.dir/build: Part2.exe
 
 .PHONY : CMakeFiles/Part2.dir/build
 
-CMakeFiles/Part2.dir/requires: CMakeFiles/Part2.dir/main.cpp.obj.requires
+CMakeFiles/Part2.dir/requires: CMakeFiles/Part2.dir/Part2Examples.cpp.obj.requires
 
 .PHONY : CMakeFiles/Part2.dir/requires
 

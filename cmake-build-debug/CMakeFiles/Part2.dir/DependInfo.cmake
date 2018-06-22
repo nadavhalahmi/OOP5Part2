@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/main.cpp" "C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/cmake-build-debug/CMakeFiles/Part2.dir/main.cpp.obj"
+  "C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/Part2Examples.cpp" "C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/cmake-build-debug/CMakeFiles/Part2.dir/Part2Examples.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
