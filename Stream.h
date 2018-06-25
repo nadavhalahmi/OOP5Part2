@@ -9,24 +9,24 @@
 #include <vector>
 
 
-template <typename T>
+template <typename T >
 class Stream{
-private:
+public:
     std::function<std::vector<T*>()> func; //vector chosen cause it's cool
-    static std::vector<Stream<T>*> created; //contains all created streams for deletion later (TODO: initialize)
 
     template <typename TContainer>
-    Stream<T>(TContainer& container){
-        func = [container](){
-            return std::vector<T*>(container.begin(),container.end()); //TODO: take care of std::map
+    Stream(TContainer& container){
+        //auto temp = container;
+        std::vector<T*> v(container.size());
+        std::copy(container.begin(), container.end(), v.begin());
+        func = [v](){
+            return v; //TODO: take care of std::map and
         };
     }
-public:
+
     template <typename TContainer>
-    static Stream<T> of(TContainer& container){
-        Stream<T>* pStream = new Stream<T>(container);
-        created.push_back(pStream);
-        return *pStream;
+    static Stream of(TContainer& container){
+        return Stream(container);
     }
 };
 #endif //PART2_STREAM_H
