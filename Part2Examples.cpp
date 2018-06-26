@@ -2,7 +2,7 @@
 #include <vector>
 #include <cassert>
 #include "Stream.h"
-/*
+
 template <typename T>
 struct Cell {
     T value;
@@ -27,7 +27,7 @@ bool compareValues(std::vector<T*> vPointer, std::vector<T> v) {
     }
     return true;
 }
-*/
+
 int main() {
 
     int array[10] = { 1, 2, 3, 2, 4, 6, 5, 7, 8, 9 };
@@ -47,6 +47,21 @@ int main() {
 
     return 0;
      */
-    Stream<int> stream = Stream<int>::of(vector);
+    /*
+    std::vector<int*> v = Stream<int>::of(vector)
+            .filter([](const int* val){return (*val) != 2;})
+            .collect<std::vector<int *>>();
+    for(auto val : v)
+        std::cout << *val << "\n";
+        */
+
+    std::vector<Cell<int>*> v = Stream<int>::of(vector)
+            .filter([](const int* val){return (*val) != 3;})
+            .distinct()
+            .map<Cell<int>>([](const int* val){return new Cell<int>(*val);})
+            .collect<std::vector<Cell<int> *>>();
+    for(auto val : v)
+        val->print();
+    std::cout << v.size();
 }
 
