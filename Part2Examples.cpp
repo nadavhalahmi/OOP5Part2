@@ -54,14 +54,24 @@ int main() {
     for(auto val : v)
         std::cout << *val << "\n";
         */
-
-    std::vector<Cell<int>*> v = Stream<int>::of(vector)
+/*
+//    std::vector<Cell<int>*> v =
+            Stream<int>::of(vector)
             .filter([](const int* val){return (*val) != 3;})
             .distinct()
+            .sorted()
             .map<Cell<int>>([](const int* val){return new Cell<int>(*val);})
-            .collect<std::vector<Cell<int> *>>();
-    for(auto val : v)
+//            .collect<std::vector<Cell<int> *>>();
+            .forEach(&Cell<int>::print);
+/*    for(auto val : v
         val->print();
-    std::cout << v.size();
+    std::cout << v.size();*/
+    int initial = 0;
+    int* sum = Stream<int>::of(vector).reduce(&initial, [](const int* a, const int* b) {
+        int* c = new int;
+        *c = *a + *b;
+        return c;
+    });
+    std::cout << "sum is: " << *sum;
 }
 
