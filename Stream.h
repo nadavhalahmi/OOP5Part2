@@ -124,5 +124,43 @@ public:
                 min_val = val;
         return min_val;
     }
+
+    T* max(){
+        std::vector<T*> retVector = func();
+        T* max_val = retVector[0]; //TODO: assuming it has elements
+        for(auto val : retVector)
+            if(*val > *max_val)
+                max_val = val;
+        return max_val;
+    }
+
+    int count() {
+        std::vector<T *> retVector = func();
+        return retVector.size();
+    }
+
+    bool anyMatch(std::function<bool(const T*)> pred){
+        std::vector<T *> retVector = func();
+        for(auto val : retVector)
+            if(pred(val))
+                return true;
+        return false;
+    }
+
+    bool allMatch(std::function<bool(const T*)> pred){
+        std::vector<T *> retVector = func();
+        for(auto val : retVector)
+            if(!pred(val))
+                return false;
+        return true;
+    }
+
+    T* findFirst(std::function<bool(const T*)> pred){
+        std::vector<T *> retVector = func();
+        for(auto val : retVector)
+            if(pred(val))
+                return val;
+        return nullptr;
+    }
 };
 #endif //PART2_STREAM_H

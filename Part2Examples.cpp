@@ -33,7 +33,7 @@ int main() {
     int array[10] = { 1, 2, 3, 2, 4, 6, 5, 7, 8, 9 };
     std::vector<int*> vector;
     for(int i = 0 ; i < 10 ; i++) vector.push_back(array + i);
-/*
+
     assert(Stream<int>::of(vector).filter([](const int* val) { return *val != 2; } ).count() == 8);
     assert(Stream<int>::of(vector).distinct().count() == 9);
 
@@ -46,32 +46,5 @@ int main() {
     assert(*Stream<int>::of(vector).reduce(&initial, [](const int* a, const int* b) { auto * c = new int; *c = *a + *b; return c; }) == 47);
 
     return 0;
-     */
-    /*
-    std::vector<int*> v = Stream<int>::of(vector)
-            .filter([](const int* val){return (*val) != 2;})
-            .collect<std::vector<int *>>();
-    for(auto val : v)
-        std::cout << *val << "\n";
-        */
-/*
-//    std::vector<Cell<int>*> v =
-            Stream<int>::of(vector)
-            .filter([](const int* val){return (*val) != 3;})
-            .distinct()
-            .sorted()
-            .map<Cell<int>>([](const int* val){return new Cell<int>(*val);})
-//            .collect<std::vector<Cell<int> *>>();
-            .forEach(&Cell<int>::print);
-/*    for(auto val : v
-        val->print();
-    std::cout << v.size();*/
-    int initial = 0;
-    int* sum = Stream<int>::of(vector).reduce(&initial, [](const int* a, const int* b) {
-        int* c = new int;
-        *c = *a + *b;
-        return c;
-    });
-    std::cout << "sum is: " << *sum;
 }
 
