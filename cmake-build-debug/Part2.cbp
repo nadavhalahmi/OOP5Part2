@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/Part2Examples.cpp">
+		<Unit filename="C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/Stream.h">
 			<Option target="Part2"/>
 		</Unit>
-		<Unit filename="C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/Stream.h">
+		<Unit filename="C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/Tests.cpp">
 			<Option target="Part2"/>
 		</Unit>
 		<Unit filename="C:/Users/nadav/OneDrive - Technion/Simester D/OOP/HW5/Part2/CMakeLists.txt">

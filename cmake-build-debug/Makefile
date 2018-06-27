@@ -122,32 +122,32 @@ Part2/fast:
 	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/build
 .PHONY : Part2/fast
 
-Part2Examples.obj: Part2Examples.cpp.obj
+Tests.obj: Tests.cpp.obj
 
-.PHONY : Part2Examples.obj
+.PHONY : Tests.obj
 
 # target to build an object file
-Part2Examples.cpp.obj:
-	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Part2Examples.cpp.obj
-.PHONY : Part2Examples.cpp.obj
+Tests.cpp.obj:
+	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Tests.cpp.obj
+.PHONY : Tests.cpp.obj
 
-Part2Examples.i: Part2Examples.cpp.i
+Tests.i: Tests.cpp.i
 
-.PHONY : Part2Examples.i
+.PHONY : Tests.i
 
 # target to preprocess a source file
-Part2Examples.cpp.i:
-	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Part2Examples.cpp.i
-.PHONY : Part2Examples.cpp.i
+Tests.cpp.i:
+	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Tests.cpp.i
+.PHONY : Tests.cpp.i
 
-Part2Examples.s: Part2Examples.cpp.s
+Tests.s: Tests.cpp.s
 
-.PHONY : Part2Examples.s
+.PHONY : Tests.s
 
 # target to generate assembly for a file
-Part2Examples.cpp.s:
-	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Part2Examples.cpp.s
-.PHONY : Part2Examples.cpp.s
+Tests.cpp.s:
+	$(MAKE) -f CMakeFiles\Part2.dir\build.make CMakeFiles/Part2.dir/Tests.cpp.s
+.PHONY : Tests.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... Part2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Part2Examples.obj
-	@echo ... Part2Examples.i
-	@echo ... Part2Examples.s
+	@echo ... Tests.obj
+	@echo ... Tests.i
+	@echo ... Tests.s
 .PHONY : help
 
 

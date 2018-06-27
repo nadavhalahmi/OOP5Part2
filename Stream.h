@@ -8,6 +8,7 @@
 #include <functional>
 #include <vector>
 #include <algorithm>
+#include <map>
 
 template <typename T >
 class Stream{
@@ -20,7 +21,20 @@ public:
         std::vector<T*> v(container.size());
         std::copy(container.begin(), container.end(), v.begin());
         s.func = [v](){
-            return v; //TODO: take care of std::map and
+            return v;
+        };
+        return s;
+    }
+
+    template <typename S>
+    static Stream of(std::map<S,T*> m){
+        Stream s;
+        std::vector<T*> v;
+        for(auto a : m){
+            v.push_back(a.second);
+        }
+        s.func = [v](){
+            return v;
         };
         return s;
     }
@@ -118,7 +132,7 @@ public:
 
     T* min(){
         std::vector<T*> retVector = func();
-        T* min_val = retVector[0]; //TODO: assuming it has elements
+        T* min_val = retVector[0]; //assuming it has elements according to facebook
         for(auto val : retVector)
             if(*val < *min_val)
                 min_val = val;
@@ -127,9 +141,9 @@ public:
 
     T* max(){
         std::vector<T*> retVector = func();
-        T* max_val = retVector[0]; //TODO: assuming it has elements
+        T* max_val = retVector[0]; //assuming it has elements according to facebook
         for(auto val : retVector)
-            if(*val > *max_val)
+            if(!(*val < *max_val))
                 max_val = val;
         return max_val;
     }
